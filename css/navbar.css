@@ -1,0 +1,22 @@
+.navbar {
+    position: relative;
+}
+
+.navbar nav {
+    transform: translate(0, 20%);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.navbar ul {
+    display: flex;
+    transform: translate(0, -20%);
+}
+
+.navbar li {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 4px;
+}
+

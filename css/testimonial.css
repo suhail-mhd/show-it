@@ -1,0 +1,124 @@
+.testimonial {
+    position: relative;
+    background-color: var(--first-color);
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+}
+
+.testimonial::before {
+    content: '';
+    position: absolute;
+    background: var(--third-color);
+    width: 2px;
+    height: 60px;
+    transform: translateY(-50px);
+    right: 32%;
+}
+
+.testimonial::after {
+    content: '';
+    position: absolute;
+    background: var(--third-color);
+    width: 2px;
+    height: 100px;
+    transform: translateY(-50px);
+    right: 32%;
+}
+
+.testimonial-img img {
+    width: 400px;
+    height: 600px; 
+}
+
+.testimonial-quote {
+    text-align: center;
+    margin-top: -60%;
+}
+
+.testimonial-quote h2 {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+}
+
+.testimonial-quote h4 {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 0;
+}
+
+blockquote {
+    font-family: var(--testimonial-font);
+}
+
+blockquote .left-quote {
+    transform: translateX(-40px);
+}
+blockquote .right-quote {
+    transform: translateX(40px);
+}
+
+blockquote .first-para {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        height: 600px;
+        padding: 50px;
+    }
+
+    .testimonial-img img {
+        width: 300px;
+        height: 400px; 
+    }
+
+    .testimonial-quote {
+        margin-top: 10px;
+    }
+
+    .testimonial-quote h2 {
+        font-size: 20px;
+    }
+
+    blockquote {
+       padding-bottom: 50px;
+    }
+
+    blockquote .left-quote {
+        transform: translateX(-20px);
+    }
+    blockquote .right-quote {
+        transform: translateX(20px);
+    }
+
+    .testimonial::before {
+        height: 40px;
+        transform: translateY(-50px);
+        right: 10%;
+    }
+    
+    .testimonial::after {
+        height: 100px;
+        transform: translateY(-50px);
+        right: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .testimonial .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .testimonial {
+        width: 100%;
+        height: 1000px;
+        padding: 50px;
+    }
+
+    .testimonial-img img {
+        width: 350px;
+        height: 500px; 
+    }
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Mukta:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&family=Open+Sans+Condensed:wght@300&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+--testimonial-font: 'Caveat', cursive;
+--body-font: 'Mukta', sans-serif;
+--main-font: 'Noto Serif JP', serif;
+--primary-font: 'Open Sans Condensed', sans-serif;
+--secondary-font: 'Shadows Into Light', cursive;
+--first-color: #F0F0CB;
+--second-color: #2D2424;
+--third-color: #C3BA85;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #333;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+.section-head {
+    float: right;
+    border: 1px solid #333;
+    padding: 5px 30px;
+    transform: translateX(21px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* utilities */
+.container {
+    max-width: 1100px;
+    width: 80%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 30px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    border: 1px solid #333;
+    color: #333;
+}

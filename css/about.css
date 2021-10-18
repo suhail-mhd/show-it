@@ -1,0 +1,131 @@
+.about {
+    position: relative;
+    background-color: var(--first-color);
+    padding: 20px 0;
+    width: 100%;
+    height: 710px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 2px;
+    height: 65px;
+    transform: translateY(-20px);
+    left: 25%;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 2px;
+    height: 210px;
+    transform: translateY(-190px);
+    left: 25%;
+}
+
+.about-text {
+    text-align: center;
+    margin-top: -148px;
+}
+
+.about-head h1 {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    transform: rotate( -10deg);
+    padding-bottom: 31px;
+    font-size: 20px;
+}
+
+.about-title h4 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 15px;
+}
+
+.mid-para {
+    padding: 20px 0;
+}
+
+.last-para {
+    margin-bottom: 20px;
+}
+
+.about-img .img-1 {
+    width: 400px;
+    height: 500px;
+    align-items: center; 
+}
+
+.about-img .img-2 {
+    position: absolute;
+    width: 250px;
+    transform: translateY(400px);
+    left: 450px;
+    border: 5px solid var(--first-color);
+}
+
+@media (max-width: 768px) {
+    .about .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .about {
+        padding-bottom: 150px;
+        height: 900px;
+    }
+
+    .about-img .img-1 {
+        width: 250px;
+        height: 300px;
+        transform: translateX(150px);
+        margin-top: -150px;
+    }
+    
+    .about-img .img-2 {
+        width: 200px;
+        transform: translateY(70px);
+        right: 50px;
+    }
+
+    .about::after {
+        transform: translateY(-100px);
+    }
+}
+
+@media (max-width: 500px) {
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .last-para {
+        margin-bottom: 10px;
+    }
+
+    .about-img .img-1 {
+        width: 200px;
+        height: 250px;
+        transform: translateX(60px);
+        margin-top: -150px;
+    }
+    
+    .about-img .img-2 {
+        width: 150px;
+        transform: translateY(50px);
+        left: 250px;
+    }
+
+    .about::before {
+        left: 15%;
+    }
+    
+    .about::after {
+        left: 15%;
+    }
+}

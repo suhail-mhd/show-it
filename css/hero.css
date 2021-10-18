@@ -1,0 +1,45 @@
+.hero {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-head {
+    margin-top: -200px;
+    color: #f4f4f4;
+}
+
+.hero-head h1 {
+    font-size: 70px;
+    line-height: 55px;
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+.hero-head h3 {
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 13px;
+}
+
+/* .hero-head p {
+    text-align: center;
+    padding: 20px;
+    white-space: nowrap;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(60, end);
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+  }  */
+
+@media (max-width: 500px) {
+    .hero-head {
+        margin-top: -230px;
+    }
+}
+

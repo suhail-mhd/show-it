@@ -1,0 +1,81 @@
+footer {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), #000), url(../img/nyc.jpeg.crdownload);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    padding: 20px 0;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.foot-content .grid {
+    grid-template-columns: 85% 15%;
+}
+
+.foot-img img {
+    width: 190px;
+    height: 190px;
+}
+
+.foot-content .foot-img {
+    transform: translateX(-100px);
+}
+
+.foot-content .social-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.foot-content .social-icons h4 {
+    text-transform: uppercase;
+}
+
+.main-foot {
+    margin-top: 50px;
+}
+
+.main-foot li {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main-foot .logo h1 {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    line-height: 26px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        width: 100%;
+        height: 300px;
+    }
+
+    .foot-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .foot-content .foot-img {
+        transform: translateX(-60px);
+    }
+}
+
+@media (max-width: 500px) {
+    footer .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .foot-content .foot-img {
+        transform: translateX(0);
+    }
+
+    footer {
+        height: 500px;
+    }
+}
